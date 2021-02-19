@@ -2,8 +2,8 @@ import axios from 'axios'
 import { Message } from 'element-ui'
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
-//axios.defaults.baseURL = '//blog-server.hunger-valley.com'
-axios.defaults.baseURL = '//localhost:3006'
+axios.defaults.baseURL = '//blog-server.hunger-valley.com'
+// axios.defaults.baseURL = '//localhost:8080'
 
 window.request = request
 
@@ -39,3 +39,4 @@ export default function request(url, type = 'GET', data = {}) {
     })
   })
 }
+
